@@ -1,0 +1,225 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  /*-webkit-border-radius: 16px;*/
+}
+/*Local onde a barra de rolagem vai percorrer*/
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+  /*-webkit-border-radius: 10px;*/
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: #C0C0C0;
+  /*-webkit-border-radius: 10px;*/
+}
+::-webkit-scrollbar-thumb:vertical:hover {
+  height: 5px;
+  background-color: #A9A9A9;
+  -webkit-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #666;
+  -webkit-border-radius: 10px;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin: 0 0 53px;
+}
+
+* {
+	margin: 0;
+	font-family: Helvetica, Verdana;
+}
+header {
+	width: 100%;
+	background: #E30613;
+	padding: 1% 0% 1% 0%;
+	margin-bottom: 1%;
+	position: fixed;
+	z-index: 100;
+	transition: all 0.4s ease;
+}
+header.sticky {
+  	height: 3%;
+  	padding-bottom: 3%;
+}
+header img {
+	width: 15%;
+}
+
+.container {
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-top: 17%;
+}
+.left {
+	float: left;
+	width: 100%;
+}
+.right {
+	float: right;
+}
+.item {
+	width: 150px;
+	height: 280px;
+	text-align: center;
+	border: #fff solid 1px;
+	padding: 1%;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.item:hover {
+	border: #C0C0C0 solid 1px;
+}
+.item img {
+	max-width: 100px;
+	max-width: 150px;
+}
+.item p {
+	margin-top: 2%;
+}
+.red-text-state {
+	color: #E30613;
+}
+.blue-text-state {
+	color: #0000FF;
+}
+.search-box {
+	width: 40%;
+	border-radius: 5px;
+	border: none;
+	padding: 0.5% 0 0.5% 1%;
+	margin-top: 1%;
+	font-size: 18px;
+}
+.btn {
+	padding: 2%;
+	background: #E30613;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	cursor: pointer;
+}
+.btn:hover {
+	background: #E3320B;
+}
+.align-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.white_body {
+    background-color: #fff;
+}
+.shaded_body {
+    background: #808080;
+}
+.modal {
+	position: fixed;
+    left: 55%; 
+    top: 60%;
+    width: 60%; /* Largura da DIV */
+    height: 70%; /* Altura da DIV */
+    /* A margem a esquerda deve ser menos a metade da largura */
+    /* A margem ao topo deve ser menos a metade da altura */
+    /* Fazendo isso, centralizará a DIV */
+    margin-left: -35%;
+    margin-top: -22%;
+    background-color: #FFF;
+    webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center; 
+    z-index: 1000; 
+    border-radius: 7px;
+    border: 1px solid #eee;
+}
+.close {
+    margin-top: 0.5%;
+    font-size: 30px;
+    margin-right: 1%;
+    text-align: right;
+    cursor: pointer;
+}
+.close:hover {
+    color: #808080;
+}
+.box_toten{
+    background-color: #A9A9A9;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 7%;
+    padding: 5% 3% 5% 3%;
+    border-radius: 10px;
+}
+.content-left {
+	width: 40%;	
+}
+.content-right {
+	width: 60%;	
+	margin-bottom: 5%;
+}
+.content-right h1 {
+	margin-bottom: 2%;
+}
+.content-right p {
+	display: block;
+	margin-top: 2%;
+}
+.matricula-box {
+	width: 40%;
+	border-radius: 5px;
+	border: 1px solid #E3320B;
+	padding: 0.5% 0 0.5% 1%;
+	margin-bottom: 2%;
+	font-size: 18px;
+}
+.back-modal {
+	background: #000;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900; 
+	opacity: 0.3;
+}
+.img-loader {
+	max-width: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container-loader {
+	width: 100%;
+	height: 20%;
+	left: 0;
+}
+#MostraPesq {
+	width: 100%;
+	max-width: 100%;
+}
+
+footer {
+	width: 100%;
+	background: #E30613;
+	height: 53px;
+	position:absolute;
+	bottom:0;
+	z-index: 100;
+}
+
